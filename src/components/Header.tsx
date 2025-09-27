@@ -10,19 +10,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-4">
-            <div className="p-2 rounded-xl bg-gradient-to-br from-accent to-primary">
-              <Crown className="h-7 w-7 text-accent-foreground" />
+          <div className="flex items-center space-x-3">
+            <div className="p-2 rounded-full bg-accent/10 border border-accent/20">
+              <Crown className="h-6 w-6 text-accent" />
             </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-heading font-bold text-foreground">Neural Ads</span>
-              <div className="hidden sm:flex items-center">
-                <Sparkles className="h-3 w-3 text-accent mr-1" />
-                <span className="text-xs text-accent font-medium tracking-wide">Combining Neuroscience with your ads to make them feel stupid saying No to.</span>
-              </div>
-              <div className="sm:hidden">
-                <span className="text-xs text-accent font-medium">Neuroscience + Ads</span>
-              </div>
+            <div>
+              <span className="text-lg font-heading font-semibold text-foreground tracking-wide">NEURAL ADS</span>
             </div>
           </div>
 
@@ -49,11 +42,11 @@ const Header = () => {
           {/* Desktop CTA */}
           <div className="hidden md:block">
             <NeuralButton 
-              variant="luxury" 
+              variant="flow" 
               size="lg"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
             >
-              Book Strategy Call
+              BOOK STRATEGY CALL
             </NeuralButton>
           </div>
 
@@ -87,14 +80,14 @@ const Header = () => {
                 Case Studies
               </a>
               <div className="px-4 pt-2">
-                <NeuralButton 
-                  variant="luxury" 
-                  size="lg" 
-                  className="w-full"
-                  onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
-                >
-                  Book Strategy Call
-                </NeuralButton>
+                  <NeuralButton 
+                    variant="flow" 
+                    size="lg" 
+                    className="w-full"
+                    onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+                  >
+                    BOOK STRATEGY CALL
+                  </NeuralButton>
               </div>
             </div>
           </div>

@@ -13,19 +13,18 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 section-container text-center">
         <div className="max-w-5xl mx-auto animate-fade-in">
-          {/* Premium Brand Badge */}
-          <div className="flex justify-center mb-8">
-            <div className="luxury-badge">
-              <Crown className="h-5 w-5 mr-2" />
-              Premium Neural Marketing
-              <Star className="h-4 w-4 ml-2" />
+          {/* Value Proposition */}
+          <div className="flex justify-center mb-12">
+            <div className="flow-badge">
+              <Brain className="h-5 w-5 mr-3" />
+              COMBINING NEUROSCIENCE WITH YOUR ADS TO MAKE THEM FEEL STUPID SAYING NO TO.
             </div>
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-heading text-5xl sm:text-6xl lg:text-8xl font-bold text-foreground mb-8 leading-tight">
+          <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-12 leading-tight tracking-wide uppercase">
             The Game Has{" "}
-            <span className="text-gradient animate-luxury-pulse">Changed</span>
+            <span className="text-accent">Changed</span>
           </h1>
 
           {/* Sophisticated Subtext */}
@@ -36,7 +35,7 @@ const HeroSection = () => {
             </p>
             <p className="text-lg sm:text-xl text-muted-foreground/80 max-w-3xl mx-auto leading-relaxed">
               In 2025, the brands firing agencies, deleting UGC, and killing SKUs are the ones 
-              <span className="text-gradient font-bold"> tripling profits.</span>
+              <span className="text-accent font-bold"> tripling profits.</span>
             </p>
           </div>
 
@@ -59,13 +58,13 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Premium Hero CTA */}
+          {/* Flow-Inspired CTA */}
           <div className="animate-slide-up" style={{animationDelay: '0.6s'}}>
             <NeuralButton 
-              variant="hero" 
+              variant="flow" 
               size="xl"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
-              className="mb-6 shadow-2xl"
+              className="mb-6 shadow-2xl uppercase tracking-wider"
             >
               Book My Neural Strategy Call
             </NeuralButton>

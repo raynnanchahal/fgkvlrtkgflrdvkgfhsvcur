@@ -9,6 +9,7 @@ const neuralButtonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        flow: "bg-accent text-accent-foreground font-bold tracking-wider uppercase hover:bg-accent/90 hover:scale-105 transition-all duration-300 shadow-cyan",
         luxury: "premium-button text-accent-foreground font-bold tracking-wide hover:scale-105",
         "luxury-outline": "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground transition-all duration-500 backdrop-blur-sm",
         "luxury-ghost": "text-accent hover:bg-accent/10 hover:text-accent transition-all duration-300",
