@@ -22,7 +22,7 @@ const HeroSection = () => {
           </div>
 
           {/* Main Headline */}
-          <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-12 leading-tight tracking-wide uppercase">
+          <h1 className="font-sans text-4xl sm:text-5xl lg:text-7xl font-black text-foreground mb-12 leading-tight tracking-wide uppercase">
             The Game Has{" "}
             <span className="text-accent">Changed</span>
           </h1>
@@ -37,6 +37,19 @@ const HeroSection = () => {
               In 2025, the brands firing agencies, deleting UGC, and killing SKUs are the ones 
               <span className="text-accent font-bold"> tripling profits.</span>
             </p>
+            
+            {/* Video Placeholder */}
+            <div className="max-w-3xl mx-auto mt-8">
+              <div className="aspect-video bg-card/50 rounded-lg border border-accent/20 backdrop-blur-sm overflow-hidden">
+                <iframe 
+                  src="https://www.loom.com/embed/4d4c3329c3d74c62992cb4972a7bd155?sid=e1e612eb-c1c6-4620-9b82-afd908dd2fd6"
+                  className="w-full h-full"
+                  frameBorder="0"
+                  allowFullScreen
+                  title="Neural Ads Strategy Video"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Luxury Stats Grid */}
