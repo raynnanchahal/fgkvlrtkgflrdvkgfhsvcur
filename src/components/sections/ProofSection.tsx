@@ -41,42 +41,42 @@ const ProofSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary/30 to-background">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-spacing bg-background border-t border-border/50">
+      <div className="container-flow">
         <div className="max-w-6xl mx-auto animate-fade-in">
           {/* Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
-              <Award className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">Results That Hit</span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full glass-effect border border-flow-cyan/30 mb-6">
+              <Award className="h-5 w-5 text-flow-cyan mr-2" />
+              <span className="text-flow-cyan font-medium uppercase tracking-wider">Results That Hit</span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="headline-flow mb-8">
               The proof is in the{" "}
-              <span className="text-accent">numbers</span>
+              <span className="accent-text">numbers</span>
             </h2>
           </div>
 
           {/* Case Study Results */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {results.map((result, index) => (
-              <div key={index} className="testimonial-card animate-scale-in" style={{animationDelay: `${index * 0.2}s`}}>
+              <div key={index} className="flow-card animate-scale-in" style={{animationDelay: `${index * 0.2}s`}}>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                  <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-0">{result.brand}</h3>
-                  <div className="stat-badge text-sm">{result.highlight}</div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-0 uppercase tracking-wider">{result.brand}</h3>
+                  <div className="inline-block px-3 py-1 rounded-full glass-effect border border-flow-cyan/30 text-flow-cyan text-xs font-medium uppercase tracking-wider">{result.highlight}</div>
                 </div>
                 
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground/90 text-sm sm:text-base">Before:</span>
+                    <span className="text-foreground/70 text-sm sm:text-base uppercase tracking-wider">Before:</span>
                     <span className="font-semibold text-sm sm:text-base">{result.before}</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground/90 text-sm sm:text-base">After:</span>
-                    <span className="font-semibold text-accent text-sm sm:text-base">{result.after}</span>
+                    <span className="text-foreground/70 text-sm sm:text-base uppercase tracking-wider">After:</span>
+                    <span className="font-semibold text-flow-cyan text-sm sm:text-base">{result.after}</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground/90 text-sm sm:text-base">Time:</span>
+                    <span className="text-foreground/70 text-sm sm:text-base uppercase tracking-wider">Time:</span>
                     <span className="font-semibold text-sm sm:text-base">{result.timeframe}</span>
                   </div>
                 </div>
@@ -86,10 +86,10 @@ const ProofSection = () => {
 
           {/* Trust Indicators */}
           <div className="text-center mb-12">
-            <div className="inline-flex items-center space-x-2 bg-card rounded-full px-6 py-3 border border-border card-shadow">
-              <Star className="h-5 w-5 text-accent fill-current" />
+            <div className="inline-flex items-center space-x-2 glass-effect rounded-full px-6 py-3 border border-flow-cyan/30">
+              <Star className="h-5 w-5 text-flow-cyan fill-current" />
               <span className="font-bold">4.8/5</span>
-              <span className="text-foreground/70">Trustpilot Rating</span>
+              <span className="text-foreground/70 uppercase tracking-wider text-sm">Trustpilot Rating</span>
             </div>
           </div>
 
@@ -100,13 +100,13 @@ const ProofSection = () => {
               return (
                 <div 
                   key={index}
-                  className="text-center p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-300 card-shadow"
+                  className="flow-card text-center p-6 transition-all duration-300 hover:scale-105"
                 >
-                  <Icon className="h-8 w-8 text-accent mx-auto mb-3" />
-                  <div className="text-2xl md:text-3xl font-bold text-accent mb-1">
+                  <Icon className="h-8 w-8 text-flow-cyan mx-auto mb-3" />
+                  <div className="text-2xl md:text-3xl font-bold text-flow-cyan mb-1">
                     {stat.number}
                   </div>
-                  <div className="text-foreground/70 text-sm font-medium">
+                  <div className="text-foreground/70 text-sm font-medium uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </div>
@@ -115,14 +115,14 @@ const ProofSection = () => {
           </div>
 
           {/* Video Testimonial Placeholder */}
-          <div className="bg-primary rounded-2xl p-8 text-center text-primary-foreground mb-12">
-            <h3 className="text-2xl font-bold mb-4">Client Success Stories</h3>
-            <p className="text-primary-foreground/80 mb-6">
+          <div className="glass-effect rounded-2xl p-8 text-center border border-flow-cyan/20 mb-12">
+            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">Client Success Stories</h3>
+            <p className="text-foreground/70 mb-6">
               Watch real founders share their transformation stories
             </p>
-            <div className="bg-primary-foreground/10 rounded-lg p-8 border border-primary-foreground/20">
+            <div className="bg-flow-cyan/5 rounded-lg p-8 border border-flow-cyan/20">
               <p className="text-lg mb-4">📹 Video Testimonials Coming Soon</p>
-              <p className="text-primary-foreground/70">
+              <p className="text-foreground/60">
                 Get early access by booking your strategy call
               </p>
             </div>
@@ -131,7 +131,7 @@ const ProofSection = () => {
           {/* CTA */}
           <div className="text-center">
             <NeuralButton 
-              variant="luxury" 
+              variant="flow" 
               size="xl"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
             >

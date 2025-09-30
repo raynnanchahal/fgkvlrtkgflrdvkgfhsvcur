@@ -26,17 +26,17 @@ const EmotionalSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary/90 to-primary/80 text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-spacing bg-background border-t border-border/50">
+      <div className="container-flow">
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-8 leading-tight">
+            <h2 className="headline-flow mb-8">
               You didn't start your brand to{" "}
-              <span className="text-accent">drown in dashboards</span>
+              <span className="accent-text">drown in dashboards</span>
             </h2>
             
-            <p className="text-xl text-primary-foreground/90 mb-8">
+            <p className="text-xl text-foreground/80 mb-8">
               You started to:
             </p>
           </div>
@@ -48,17 +48,17 @@ const EmotionalSection = () => {
               return (
                 <div 
                   key={index}
-                  className="flex items-center space-x-4 p-6 rounded-lg bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 animate-scale-in"
+                  className="flow-card flex items-center space-x-4 p-6 animate-scale-in"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-accent" />
+                    <div className="w-12 h-12 rounded-full bg-flow-cyan/20 flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-flow-cyan" />
                     </div>
                   </div>
                   <div>
                     <h3 className="text-lg font-bold mb-1">{desire.title}</h3>
-                    <p className="text-primary-foreground/70 text-sm">{desire.desc}</p>
+                    <p className="text-foreground/70 text-sm">{desire.desc}</p>
                   </div>
                 </div>
               );
@@ -67,19 +67,19 @@ const EmotionalSection = () => {
 
           {/* Reality Check */}
           <div className="text-center mb-12">
-            <div className="bg-destructive/20 border border-destructive/30 rounded-lg p-8 mb-8">
-              <h3 className="text-2xl font-bold text-accent mb-4">But now?</h3>
-              <p className="text-xl text-primary-foreground/90 leading-relaxed">
+            <div className="glass-effect border border-flow-cyan/20 rounded-lg p-8 mb-8">
+              <h3 className="text-2xl font-bold text-flow-cyan mb-4 uppercase tracking-wider">But now?</h3>
+              <p className="text-xl text-foreground/80 leading-relaxed">
                 You're burned out. Exhausted. Running on empty.{" "}
-                <span className="text-accent font-bold">Let's fix that.</span>
+                <span className="text-flow-cyan font-bold">Let's fix that.</span>
               </p>
             </div>
             
-            <div className="bg-accent/10 border border-accent/30 rounded-lg p-8">
-              <h3 className="text-3xl font-bold text-accent mb-4">
+            <div className="glass-effect border border-flow-cyan/30 rounded-lg p-8">
+              <h3 className="text-3xl font-bold text-flow-cyan mb-4 uppercase tracking-wider">
                 You run the brand, we run the growth.
               </h3>
-              <p className="text-lg text-primary-foreground/80">
+              <p className="text-lg text-foreground/70">
                 It's time to get back to why you started this journey.
               </p>
             </div>
@@ -93,9 +93,9 @@ const EmotionalSection = () => {
               { emoji: "🌍", label: "Location Freedom" },
               { emoji: "😌", label: "Peace of Mind" }
             ].map((item, index) => (
-              <div key={index} className="text-center p-4 rounded-lg bg-accent/10 border border-accent/20">
+              <div key={index} className="text-center p-4 rounded-lg glass-effect border border-flow-cyan/20">
                 <div className="text-3xl mb-2">{item.emoji}</div>
-                <div className="text-sm font-semibold text-accent">{item.label}</div>
+                <div className="text-sm font-semibold text-flow-cyan uppercase tracking-wider">{item.label}</div>
               </div>
             ))}
           </div>
@@ -103,14 +103,14 @@ const EmotionalSection = () => {
           {/* Final CTA */}
           <div className="text-center">
             <NeuralButton 
-              variant="luxury" 
+              variant="flow" 
               size="xl"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
               className="mb-4"
             >
               Let's Build My Machine
             </NeuralButton>
-            <p className="text-primary-foreground/60 text-sm">
+            <p className="text-foreground/60 text-sm uppercase tracking-wider">
               Your freedom is one strategy call away
             </p>
           </div>

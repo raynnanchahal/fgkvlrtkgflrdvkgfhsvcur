@@ -26,19 +26,19 @@ const OfferSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-accent/5 to-secondary/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="section-spacing bg-background border-t border-border/50">
+      <div className="container-flow">
         <div className="max-w-4xl mx-auto animate-fade-in">
           {/* Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent/10 border border-accent/20 mb-6">
-              <CheckCircle className="h-5 w-5 text-accent mr-2" />
-              <span className="text-accent font-semibold">What You'll Get</span>
+            <div className="inline-flex items-center px-4 py-2 rounded-full glass-effect border border-flow-cyan/30 mb-6">
+              <CheckCircle className="h-5 w-5 text-flow-cyan mr-2" />
+              <span className="text-flow-cyan font-medium uppercase tracking-wider">What You'll Get</span>
             </div>
             
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            <h2 className="headline-flow mb-6">
               On your strategy call,{" "}
-              <span className="text-accent">walk away with:</span>
+              <span className="accent-text">walk away with:</span>
             </h2>
           </div>
 
@@ -49,12 +49,12 @@ const OfferSection = () => {
               return (
                 <div 
                   key={index}
-                  className="flex items-start space-x-4 p-6 rounded-lg bg-card border border-border hover:border-accent/50 transition-all duration-300 card-shadow animate-slide-up"
+                  className="flow-card flex items-start space-x-4 p-6 transition-all duration-300 hover:scale-105 animate-fade-in"
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <div className="flex-shrink-0">
-                    <div className="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center">
-                      <Icon className="h-6 w-6 text-accent" />
+                    <div className="w-12 h-12 rounded-full bg-flow-cyan/10 flex items-center justify-center">
+                      <Icon className="h-6 w-6 text-flow-cyan" />
                     </div>
                   </div>
                   <div>
@@ -62,7 +62,7 @@ const OfferSection = () => {
                     <p className="text-foreground/70">{benefit.desc}</p>
                   </div>
                   <div className="flex-shrink-0">
-                    <CheckCircle className="h-6 w-6 text-accent" />
+                    <CheckCircle className="h-6 w-6 text-flow-cyan" />
                   </div>
                 </div>
               );
@@ -70,30 +70,30 @@ const OfferSection = () => {
           </div>
 
           {/* Value Proposition */}
-          <div className="bg-primary text-primary-foreground rounded-2xl p-8 mb-12 text-center">
-            <h3 className="text-2xl font-bold mb-4">Free 30-Minute Strategy Session</h3>
+          <div className="glass-effect rounded-2xl p-8 mb-12 text-center border border-flow-cyan/20">
+            <h3 className="text-2xl font-bold mb-4 uppercase tracking-wider">Free 30-Minute Strategy Session</h3>
             <div className="grid md:grid-cols-3 gap-6 mb-6">
               <div>
-                <div className="text-3xl font-bold text-accent mb-2">$0</div>
-                <div className="text-primary-foreground/80">Investment</div>
+                <div className="text-3xl font-bold text-flow-cyan mb-2">$0</div>
+                <div className="text-foreground/70 uppercase tracking-wider text-sm">Investment</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-accent mb-2">30</div>
-                <div className="text-primary-foreground/80">Minutes</div>
+                <div className="text-3xl font-bold text-flow-cyan mb-2">30</div>
+                <div className="text-foreground/70 uppercase tracking-wider text-sm">Minutes</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-accent mb-2">∞</div>
-                <div className="text-primary-foreground/80">Value</div>
+                <div className="text-3xl font-bold text-flow-cyan mb-2">∞</div>
+                <div className="text-foreground/70 uppercase tracking-wider text-sm">Value</div>
               </div>
             </div>
-            <p className="text-primary-foreground/80">
+            <p className="text-foreground/70">
               No pitch, no pressure. Just pure strategy tailored to your business.
             </p>
           </div>
 
           {/* Social Proof Badge */}
           <div className="flex justify-center mb-8">
-            <div className="stat-badge text-lg px-6 py-3">
+            <div className="inline-block px-6 py-3 rounded-full glass-effect border border-flow-cyan/30 text-flow-cyan text-lg font-medium uppercase tracking-wider">
               ✅ Used by 132+ Brands Worldwide
             </div>
           </div>
@@ -101,14 +101,14 @@ const OfferSection = () => {
           {/* CTA */}
           <div className="text-center">
             <NeuralButton 
-              variant="hero" 
+              variant="flow" 
               size="xl"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
               className="mb-4"
             >
               Map My Playbook
             </NeuralButton>
-            <p className="text-foreground/60 text-sm">
+            <p className="text-foreground/60 text-sm uppercase tracking-wider">
               Available slots filling fast • Book within 24 hours
             </p>
           </div>

@@ -2,17 +2,17 @@ import { Brain } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="glass-effect border-t border-border/50 py-12">
+      <div className="container-flow">
         <div className="flex flex-col items-center justify-center space-y-6">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-accent" />
-            <span className="text-2xl font-bold">Neural Ads</span>
+            <Brain className="h-8 w-8 text-flow-cyan" />
+            <span className="text-2xl font-bold uppercase tracking-wider">Neural Ads</span>
           </div>
           
           {/* Tagline */}
-          <p className="text-primary-foreground/80 text-center max-w-md">
+          <p className="text-foreground/70 text-center max-w-md uppercase tracking-wider text-sm">
             Brain-targeting growth engine for ambitious brands
           </p>
           
@@ -22,7 +22,7 @@ const Footer = () => {
               href="https://creative-win-machine.lovable.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary-foreground/70 hover:text-accent transition-colors"
+              className="text-foreground/70 hover:text-flow-cyan transition-colors uppercase tracking-wider"
             >
               High-Converting Creatives
             </a>
@@ -30,18 +30,18 @@ const Footer = () => {
               href="https://preview--neuroads-casecraft.lovable.app/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-primary-foreground/70 hover:text-accent transition-colors"
+              className="text-foreground/70 hover:text-flow-cyan transition-colors uppercase tracking-wider"
             >
               Case Studies
             </a>
-            <span className="text-primary-foreground/70">
+            <span className="text-foreground/70 uppercase tracking-wider">
               Privacy Policy (Coming Soon)
             </span>
           </div>
           
           {/* Copyright */}
-          <div className="border-t border-primary-foreground/20 pt-6 text-center">
-            <p className="text-primary-foreground/60 text-sm">
+          <div className="border-t border-border/50 pt-6 text-center">
+            <p className="text-foreground/60 text-sm uppercase tracking-wider">
               © 2025 Neural Ads. All rights reserved.
             </p>
           </div>
