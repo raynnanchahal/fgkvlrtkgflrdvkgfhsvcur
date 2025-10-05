@@ -4,20 +4,20 @@ import { NeuralButton } from "../ui/neural-button";
 const DiscoverySection = () => {
   return (
     <section className="section-spacing bg-background border-t border-border/50">
-      <div className="container-flow">
+      <div className="container-flow px-4">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight mb-6">
-              WHAT YOU'LL DISCOVER <span className="text-flow-cyan">INSIDE</span>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tight mb-6">
+              WHAT YOU'LL DISCOVER <span className="text-gradient">INSIDE</span>
             </h2>
-            <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-foreground/80 max-w-3xl mx-auto">
               In this 14-minute video, you'll uncover:
             </p>
           </div>
 
           {/* Discovery Grid */}
-          <div className="grid md:grid-cols-2 gap-6 mb-16">
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div className="flow-card p-8">
               <Eye className="w-12 h-12 text-flow-cyan mb-4" />
               <h3 className="text-xl font-bold uppercase tracking-wider mb-3">INVISIBLE FACTORS LIMITING YOUR AD PERFORMANCE</h3>
@@ -52,21 +52,22 @@ const DiscoverySection = () => {
           </div>
 
           {/* Step 1 */}
-          <div className="glass-effect border border-flow-cyan/30 rounded-lg p-10 mb-8">
-            <div className="flex items-start gap-6">
+          <div className="glass-effect border border-flow-cyan/30 rounded-lg p-6 sm:p-10 mb-8">
+            <div className="flex flex-col sm:flex-row items-start gap-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-full bg-flow-cyan/20 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-flow-cyan">1</span>
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-flow-cyan/20 flex items-center justify-center">
+                  <span className="text-2xl sm:text-3xl font-bold text-flow-cyan">1</span>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold uppercase tracking-wider mb-4">SEE THE LEVERAGE</h3>
-                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-wider mb-4">SEE THE LEVERAGE</h3>
+                <p className="text-base sm:text-lg text-foreground/80 mb-6 leading-relaxed">
                   Extract more from your current ads — without chaos or wasted spend.
                 </p>
                 <NeuralButton 
                   variant="flow" 
                   size="lg"
+                  className="w-full sm:w-auto"
                   onClick={() => document.getElementById('video-section')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   👉 WATCH THE VIDEO
@@ -76,21 +77,22 @@ const DiscoverySection = () => {
           </div>
 
           {/* Step 2 */}
-          <div className="glass-effect border border-flow-cyan/30 rounded-lg p-10 mb-16">
-            <div className="flex items-start gap-6">
+          <div className="glass-effect border border-flow-cyan/30 rounded-lg p-6 sm:p-10 mb-16">
+            <div className="flex flex-col sm:flex-row items-start gap-6">
               <div className="flex-shrink-0">
-                <div className="w-16 h-16 rounded-full bg-flow-cyan/20 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-flow-cyan">2</span>
+                <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-flow-cyan/20 flex items-center justify-center">
+                  <span className="text-2xl sm:text-3xl font-bold text-flow-cyan">2</span>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold uppercase tracking-wider mb-4">MOVE FASTER, INTENTIONALLY</h3>
-                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                <h3 className="text-xl sm:text-2xl font-bold uppercase tracking-wider mb-4">MOVE FASTER, INTENTIONALLY</h3>
+                <p className="text-base sm:text-lg text-foreground/80 mb-6 leading-relaxed">
                   If it clicks, apply to work with us. We only partner with founders serious about predictable, profitable scaling.
                 </p>
                 <NeuralButton 
                   variant="neural" 
                   size="lg"
+                  className="w-full sm:w-auto"
                   onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
                 >
                   APPLY NOW →
@@ -101,8 +103,8 @@ const DiscoverySection = () => {
 
           {/* Proof Section */}
           <div className="text-center">
-            <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tight mb-8">
-              PROVEN, <span className="text-flow-cyan">NOT PROMISED</span>
+            <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold uppercase tracking-tight mb-8">
+              PROVEN, <span className="text-gradient">NOT PROMISED</span>
             </h3>
             
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
@@ -141,13 +143,14 @@ const DiscoverySection = () => {
               </div>
             </div>
 
-            <p className="text-2xl font-bold uppercase tracking-wider mb-8">
-              Scaling as a <span className="text-flow-cyan">science</span>, not luck.
+            <p className="text-xl sm:text-2xl font-bold uppercase tracking-wider mb-8 px-4">
+              Scaling as a <span className="text-gradient">science</span>, not luck.
             </p>
 
             <NeuralButton 
               variant="flow" 
               size="lg"
+              className="w-full sm:w-auto"
               onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
             >
               APPLY NOW →

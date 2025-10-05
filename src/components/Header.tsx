@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Menu, X, Brain, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { NeuralButton } from "./ui/neural-button";
+import neuralLogo from "@/assets/neural-logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,22 +15,20 @@ const Header = () => {
             {/* Logo */}
             <div className="flex-shrink-0">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full border border-flow-cyan/30 flex items-center justify-center">
-                  <Brain className="w-5 h-5 text-flow-cyan" />
-                </div>
-                <div className="font-bold text-lg uppercase tracking-wider">NEURO ADS</div>
+                <img src={neuralLogo} alt="Neural Ads" className="h-10 w-10 md:h-12 md:w-12" />
+                <div className="font-bold text-base sm:text-lg uppercase tracking-wider">NEURO ADS</div>
               </div>
             </div>
             
             {/* Desktop navigation */}
-            <nav className="hidden lg:flex space-x-12">
-              <a href="https://neuroads-casecraft.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
+            <nav className="hidden lg:flex space-x-8 xl:space-x-12">
+              <a href="https://neuroads-casecraft.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
                 CASE STUDIES
               </a>
-              <a href="https://creative-win-machine.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
+              <a href="https://creative-win-machine.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
                 HIGH CONVERTING CREATIVES
               </a>
-              <a href="https://www.linkedin.com/in/ritish-nach-000801211/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
+              <a href="https://www.linkedin.com/in/ritish-nach-000801211/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
                 LIFETIME RIDE
               </a>
             </nav>

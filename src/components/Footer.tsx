@@ -1,4 +1,4 @@
-import { Brain } from "lucide-react";
+import neuralLogo from "@/assets/neural-logo.png";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-6">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <Brain className="h-8 w-8 text-flow-cyan" />
+            <img src={neuralLogo} alt="Neural Ads" className="h-10 w-10" />
             <span className="text-2xl font-bold uppercase tracking-wider">Neural Ads</span>
           </div>
           
