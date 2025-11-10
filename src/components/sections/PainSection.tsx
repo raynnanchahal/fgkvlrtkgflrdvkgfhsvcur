@@ -69,9 +69,9 @@ const PainSection = () => {
           <NeuralButton 
             variant="neural" 
             size="lg"
-            onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+            onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
           >
-            I'm Done Burning Money
+            LET'S TALK
           </NeuralButton>
         </div>
       </div>

@@ -46,7 +46,7 @@ const DiscoverySection = () => {
               <Users className="w-12 h-12 text-flow-cyan mb-4" />
               <h3 className="text-xl font-bold uppercase tracking-wider mb-3">THE 230+ BRAND SECRET</h3>
               <p className="text-foreground/70 leading-relaxed">
-                How elite brands maintain 50%+ margins and stable 7–8 figure growth.
+                How brands maintain 50%+ margins and stable 7–8 figure growth.
               </p>
             </div>
           </div>
@@ -93,9 +93,9 @@ const DiscoverySection = () => {
                   variant="neural" 
                   size="lg"
                   className="w-full sm:w-auto"
-                  onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+                  onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
                 >
-                  APPLY NOW →
+                  LET'S TALK
                 </NeuralButton>
               </div>
             </div>
@@ -151,9 +151,9 @@ const DiscoverySection = () => {
               variant="flow" 
               size="lg"
               className="w-full sm:w-auto"
-              onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+              onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
             >
-              APPLY NOW →
+              LET'S TALK
             </NeuralButton>
           </div>
         </div>

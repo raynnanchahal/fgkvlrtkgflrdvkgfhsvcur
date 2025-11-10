@@ -80,9 +80,9 @@ const ShiftSection = () => {
           <NeuralButton 
             variant="flow" 
             size="lg"
-            onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+            onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
           >
-            Show Me The Shift
+            LET'S TALK
           </NeuralButton>
         </div>
       </div>

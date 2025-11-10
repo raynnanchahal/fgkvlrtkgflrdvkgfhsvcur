@@ -103,10 +103,10 @@ const OfferSection = () => {
             <NeuralButton 
               variant="flow" 
               size="xl"
-              onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+              onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
               className="mb-4"
             >
-              Map My Playbook
+              LET'S TALK
             </NeuralButton>
             <p className="text-foreground/60 text-sm uppercase tracking-wider">
               Available slots filling fast • Book within 24 hours

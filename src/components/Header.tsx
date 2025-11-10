@@ -25,18 +25,12 @@ const Header = () => {
               <a href="https://neuroads-casecraft.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
                 CASE STUDIES
               </a>
-              <a href="https://creative-win-machine.lovable.app/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
-                HIGH CONVERTING CREATIVES
-              </a>
-              <a href="https://www.linkedin.com/in/ritish-nach-000801211/" target="_blank" rel="noopener noreferrer" className="text-xs xl:text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors">
-                LIFETIME RIDE
-              </a>
             </nav>
             
             {/* Desktop CTA */}
             <div className="hidden lg:block">
-              <NeuralButton variant="neural" size="default" onClick={() => document.getElementById('video-section')?.scrollIntoView({ behavior: 'smooth' })}>
-                WATCH BREAKDOWN
+              <NeuralButton variant="neural" size="default" onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}>
+                LET'S TALK
               </NeuralButton>
             </div>
             
@@ -68,24 +62,6 @@ const Header = () => {
               >
                 CASE STUDIES
               </a>
-              <a 
-                href="https://creative-win-machine.lovable.app/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                HIGH CONVERTING CREATIVES
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/ritish-nach-000801211/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm font-medium uppercase tracking-wider hover:text-flow-cyan transition-colors py-2"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                LIFETIME RIDE
-              </a>
               <div className="pt-4">
                 <NeuralButton 
                   variant="neural" 
@@ -93,10 +69,10 @@ const Header = () => {
                   className="w-full"
                   onClick={() => {
                     setIsMenuOpen(false);
-                    document.getElementById('video-section')?.scrollIntoView({ behavior: 'smooth' });
+                    window.open('https://cal.com/ritish-nanchahal/call', '_blank');
                   }}
                 >
-                  WATCH BREAKDOWN
+                  LET'S TALK
                 </NeuralButton>
               </div>
             </nav>

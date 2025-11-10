@@ -105,10 +105,10 @@ const EmotionalSection = () => {
             <NeuralButton 
               variant="flow" 
               size="xl"
-              onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+              onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
               className="mb-4"
             >
-              Let's Build My Machine
+              LET'S TALK
             </NeuralButton>
             <p className="text-foreground/60 text-sm uppercase tracking-wider">
               Your freedom is one strategy call away

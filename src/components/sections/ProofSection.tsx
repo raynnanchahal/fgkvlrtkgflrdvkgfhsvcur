@@ -133,9 +133,9 @@ const ProofSection = () => {
             <NeuralButton 
               variant="flow" 
               size="xl"
-              onClick={() => window.open('https://calendly.com/ritishnanchahal-amld/discovery', '_blank')}
+              onClick={() => window.open('https://cal.com/ritish-nanchahal/call', '_blank')}
             >
-              Send Me The Case Studies
+              LET'S TALK
             </NeuralButton>
           </div>
         </div>
