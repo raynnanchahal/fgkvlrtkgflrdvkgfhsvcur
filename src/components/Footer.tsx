@@ -30,6 +30,14 @@ const Footer = () => {
               >
                 Case Studies
               </a>
+              <a 
+                href="https://forms.gle/7LidrRwvb2dJRc1j6" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-foreground/60 hover:text-flow-cyan transition-colors"
+              >
+                We're Hiring
+              </a>
             </div>
           </div>
           
