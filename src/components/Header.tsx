@@ -11,10 +11,7 @@ const Header = () => {
           <div className="flex justify-between items-center h-16 sm:h-20 px-4 sm:px-6">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <img src={neuralLogo} alt="Neural Ads" className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12" />
-                <div className="font-bold text-sm sm:text-base md:text-lg uppercase tracking-wider">NEURO ADS</div>
-              </div>
+              <img src={neuralLogo} alt="Neural Ads" className="h-10 sm:h-12 md:h-14 w-auto" />
             </div>
             
             {/* CTA Button - visible on all screens */}
