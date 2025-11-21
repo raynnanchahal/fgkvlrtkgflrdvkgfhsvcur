@@ -9,10 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-12">
           {/* Logo & Tagline */}
           <div className="space-y-3 sm:space-y-4">
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              <img src={neuralLogo} alt="Neural Ads" className="h-7 w-7 sm:h-8 sm:w-8" />
-              <span className="text-lg sm:text-xl font-bold tracking-wide">Neural Ads</span>
-            </div>
+            <img src={neuralLogo} alt="Neural Ads" className="h-10 sm:h-12 w-auto" />
             <p className="text-foreground/60 text-xs sm:text-sm leading-relaxed">
               Brain-targeting growth engine for ambitious brands
             </p>
