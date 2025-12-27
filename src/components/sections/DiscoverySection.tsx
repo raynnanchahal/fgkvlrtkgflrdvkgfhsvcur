@@ -30,7 +30,7 @@ const DiscoverySection = () => {
               <TrendingUp className="w-10 h-10 sm:w-12 sm:h-12 text-flow-cyan mb-3 sm:mb-4" />
               <h3 className="text-base sm:text-lg md:text-xl font-bold uppercase tracking-wider mb-2 sm:mb-3">WHY TRADITIONAL AD FRAMEWORKS ARE COLLAPSING</h3>
               <p className="text-sm sm:text-base text-foreground/70 leading-relaxed">
-                Discover why the old playbooks stopped working in 2025 and what replaced them.
+                Discover why the old playbooks stopped working in 2026 and what replaced them.
               </p>
             </div>
 
