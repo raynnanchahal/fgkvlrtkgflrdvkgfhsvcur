@@ -34,7 +34,7 @@ const HeroSection = () => {
           <div id="video-section" className="max-w-4xl mx-auto mb-12 sm:mb-16">
             <div className="relative aspect-video rounded-lg overflow-hidden bg-card/50 border border-border cyber-glow">
               <iframe
-                src="https://www.loom.com/embed/4d4c3329c3d74c62992cb4972a7bd155?sid=e1e612eb-c1c6-4620-9b82-afd908dd2fd6"
+                src="https://www.loom.com/embed/0d77b3358400491fa55b71a4adfe7989"
                 className="w-full h-full"
                 frameBorder="0"
                 allowFullScreen
