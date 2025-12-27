@@ -1,142 +1,129 @@
-import { Check } from "lucide-react";
-import { NeuralButton } from "@/components/ui/neural-button";
-
 const PricingSection = () => {
-  const pricingTiers = [
-    {
-      name: "BUILD",
-      subtitle: "install fit",
-      target: "~$20k/month",
-      milestone: "Achieve message-to-brain fit → real PMF signal.",
-      price: "$2k",
-      changes: [
-        "People \"get it\" instantly",
-        "First profitable demand loop appears",
-        "Wasteful testing stops"
-      ]
-    },
-    {
-      name: "SCALE",
-      subtitle: "install economics",
-      target: "~$100k/month",
-      milestone: "Achieve cost economics that allow reliable scale.",
-      price: "$5k",
-      changes: [
-        "CAC stabilises",
-        "Margin becomes predictable",
-        "You can push budget without fear"
-      ],
-      featured: true
-    },
-    {
-      name: "DOMINATE",
-      subtitle: "install exponential scale",
-      target: "$500k+/month",
-      milestone: "Neuro precision embedded across touchpoints → scale becomes self-sustaining.",
-      price: "$10k",
-      changes: [
-        "Revenue and profit compound",
-        "Messaging propagates through brand + channels",
-        "Dependency on external partners drops"
-      ]
-    }
-  ];
-
   return (
-    <section className="section-spacing bg-background/50 border-y border-border/30">
-      <div className="container-flow px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="text-center mb-12 sm:mb-16 md:mb-20">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-foreground">
-              Choose Your Growth Path
-            </h2>
-            <p className="text-base sm:text-lg md:text-xl text-foreground/70 max-w-2xl mx-auto">
-              Precision-engineered packages for every stage of scale
+    <section className="py-28 bg-black">
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-center text-4xl font-bold text-white mb-6">
+          Choose Your Scale Phase
+        </h2>
+
+        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-20">
+          Engagements are designed around where your business is now — and what
+          needs to be installed next for reliable growth in 2026.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* BUILD */}
+          <div className="rounded-2xl border border-white/10 p-10 bg-black">
+            <h3 className="text-2xl font-semibold text-white mb-1">BUILD</h3>
+            <p className="text-gray-400 mb-10">install fit</p>
+
+            <p className="text-sm text-gray-400 mb-2">
+              Target →{" "}
+              <span className="text-white font-semibold">$20k/month</span>
             </p>
+
+            <div className="text-2xl font-semibold text-cyan-400 mb-10">
+              $2k<span className="text-sm font-normal text-gray-400"> / month</span>
+            </div>
+
+            <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+              MILESTONE
+            </h4>
+            <p className="text-gray-300 mb-10">
+              Achieve message-to-brain fit → real PMF signal.
+            </p>
+
+            <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+              WHAT CHANGES
+            </h4>
+            <ul className="space-y-3 text-gray-300">
+              <li>✓ People “get it” instantly</li>
+              <li>✓ First profitable demand loop appears</li>
+              <li>✓ Wasteful testing stops</li>
+            </ul>
+
+            <button className="mt-10 w-full rounded-xl border border-white/20 py-3 text-white hover:bg-white/5 transition">
+              Let’s Talk
+            </button>
           </div>
 
-          {/* Pricing Cards */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
-            {pricingTiers.map((tier, index) => (
-              <div
-                key={index}
-                className={`relative p-6 sm:p-8 rounded-xl border transition-all duration-300 hover:scale-105 ${
-                  tier.featured
-                    ? "bg-background border-flow-cyan/50 shadow-cyan"
-                    : "bg-background/60 border-border/30 hover:border-flow-cyan/30"
-                } backdrop-blur-sm`}
-              >
-                {tier.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-flow-cyan text-background text-xs font-bold rounded-full uppercase tracking-wider">
-                    Most Popular
-                  </div>
-                )}
-
-                {/* Tier Header */}
-                <div className="mb-6">
-                  <h3 className="text-2xl sm:text-3xl font-bold text-foreground uppercase tracking-wide mb-1">
-                    {tier.name}
-                  </h3>
-                  <p className="text-sm sm:text-base text-foreground/60 mb-4">
-                    {tier.subtitle}
-                  </p>
-                  <div className="flex items-baseline gap-2 mb-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-flow-cyan">
-                      {tier.price}
-                    </span>
-                    <span className="text-foreground/60 text-sm">/mo</span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-foreground/50">
-                    Target → {tier.target}
-                  </p>
-                </div>
-
-                {/* Milestone */}
-                <div className="mb-6 pb-6 border-b border-border/30">
-                  <p className="text-xs sm:text-sm font-semibold text-foreground/70 uppercase tracking-wider mb-2">
-                    Milestone
-                  </p>
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    {tier.milestone}
-                  </p>
-                </div>
-
-                {/* What Changes */}
-                <div className="mb-8">
-                  <p className="text-xs sm:text-sm font-semibold text-foreground/70 uppercase tracking-wider mb-4">
-                    What Changes
-                  </p>
-                  <ul className="space-y-3">
-                    {tier.changes.map((change, idx) => (
-                      <li key={idx} className="flex items-start gap-3">
-                        <Check className="w-4 h-4 sm:w-5 sm:h-5 text-flow-cyan flex-shrink-0 mt-0.5" />
-                        <span className="text-sm sm:text-base text-foreground/80">
-                          {change}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* CTA Button */}
-                <NeuralButton
-                  variant={tier.featured ? "flow" : "outline"}
-                  className="w-full text-sm sm:text-base"
-                  onClick={() => window.open("https://cal.com/ritish-nanchahal/call", "_blank")}
-                >
-                  Let's Talk
-                </NeuralButton>
+          {/* SCALE */}
+          <div className="relative rounded-2xl p-[1px] bg-gradient-to-b from-cyan-400/60 to-transparent">
+            <div className="rounded-2xl bg-black p-10 h-full">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-400 text-black text-xs font-semibold px-4 py-1 rounded-full">
+                MOST POPULAR
               </div>
-            ))}
+
+              <h3 className="text-2xl font-semibold text-white mb-1">SCALE</h3>
+              <p className="text-gray-400 mb-10">install economics</p>
+
+              <p className="text-sm text-gray-400 mb-2">
+                Target →{" "}
+                <span className="text-white font-semibold">$100k/month</span>
+              </p>
+
+              <div className="text-2xl font-semibold text-cyan-400 mb-10">
+                $5k<span className="text-sm font-normal text-gray-400"> / month</span>
+              </div>
+
+              <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+                MILESTONE
+              </h4>
+              <p className="text-gray-300 mb-10">
+                Achieve cost economics that allow reliable scale.
+              </p>
+
+              <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+                WHAT CHANGES
+              </h4>
+              <ul className="space-y-3 text-gray-300">
+                <li>✓ CAC stabilises</li>
+                <li>✓ Margin becomes predictable</li>
+                <li>✓ You can push budget without fear</li>
+              </ul>
+
+              <button className="mt-10 w-full rounded-xl bg-cyan-400 py-3 text-black font-semibold hover:bg-cyan-300 transition">
+                LET’S TALK
+              </button>
+            </div>
           </div>
 
-          {/* Bottom Note */}
-          <div className="text-center mt-12 sm:mt-16">
-            <p className="text-sm sm:text-base text-foreground/60 max-w-3xl mx-auto">
-              All packages include full-spectrum neuro advertising implementation, 
-              creative optimization, and strategic guidance tailored to your growth stage.
+          {/* DOMINATE */}
+          <div className="rounded-2xl border border-white/10 p-10 bg-black">
+            <h3 className="text-2xl font-semibold text-white mb-1">DOMINATE</h3>
+            <p className="text-gray-400 mb-10">
+              install exponential scale
             </p>
+
+            <p className="text-sm text-gray-400 mb-2">
+              Target →{" "}
+              <span className="text-white font-semibold">$500k+/month</span>
+            </p>
+
+            <div className="text-2xl font-semibold text-cyan-400 mb-10">
+              $10k<span className="text-sm font-normal text-gray-400"> / month</span>
+            </div>
+
+            <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+              MILESTONE
+            </h4>
+            <p className="text-gray-300 mb-10">
+              Neuro precision embedded across touchpoints → scale becomes
+              self-sustaining.
+            </p>
+
+            <h4 className="text-sm tracking-widest text-gray-500 mb-4">
+              WHAT CHANGES
+            </h4>
+            <ul className="space-y-3 text-gray-300">
+              <li>✓ Revenue and profit compound</li>
+              <li>✓ Messaging propagates across brand + channels</li>
+              <li>✓ Dependency on external partners drops</li>
+            </ul>
+
+            <button className="mt-10 w-full rounded-xl border border-white/20 py-3 text-white hover:bg-white/5 transition">
+              Let’s Talk
+            </button>
           </div>
         </div>
       </div>
@@ -145,3 +132,4 @@ const PricingSection = () => {
 };
 
 export default PricingSection;
+
