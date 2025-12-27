@@ -5,7 +5,7 @@ const PricingSection = () => {
   const pricingTiers = [
     {
       name: "BUILD",
-      subtitle: "install fit",
+      subtitle: "Install Fit",
       target: "~$20k/month",
       milestone: "Achieve message-to-brain fit → real PMF signal.",
       price: "$2k",
@@ -81,15 +81,20 @@ const PricingSection = () => {
                   <p className="text-sm sm:text-base text-foreground/60 mb-4">
                     {tier.subtitle}
                   </p>
-                  <div className="flex items-baseline gap-2 mb-2">
-                    <span className="text-3xl sm:text-4xl md:text-5xl font-bold text-flow-cyan">
-                      {tier.price}
-                    </span>
-                    <span className="text-foreground/60 text-sm">/mo</span>
-                  </div>
-                  <p className="text-xs sm:text-sm text-foreground/50">
-                    Target → {tier.target}
-                  </p>
+                <p className="text-sm sm:text-base text-foreground/60 mb-2">
+  Target →{" "}
+  <span className="text-flow-cyan font-semibold">
+    {tier.target}
+  </span>
+</p>
+
+<div className="flex items-baseline gap-2">
+  <span className="text-xl sm:text-2xl font-semibold text-flow-cyan/80">
+    {tier.price}
+  </span>
+  <span className="text-foreground/50 text-xs">/mo</span>
+</div>
+
                 </div>
 
                 {/* Milestone */}
