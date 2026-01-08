@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "@/pages/Index";
 
 // Policy pages
@@ -35,7 +35,7 @@ function App() {
         <Route path="/refunds" element={<Refunds />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
 
-        {/* Fallback – redirect unknown pages back to Home */}
+        {/* Fallback */}
         <Route path="*" element={<Home />} />
 
       </Routes>
