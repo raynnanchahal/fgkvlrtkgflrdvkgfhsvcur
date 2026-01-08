@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "@/pages/Index";
+import Moments from "./pages/Moments";
 
 // Policy pages
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
