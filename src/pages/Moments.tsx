@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { WistiaPlayer } from "@wistia/wistia-player-react";
 import { supabase } from "@/integrations/supabase/client";
-import { Helmet } from "react-helmet-async";
 
 interface Reel {
   id: string;
