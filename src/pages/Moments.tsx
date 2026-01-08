@@ -51,11 +51,6 @@ const Moments = () => {
 
   return (
     <>
-      {/* Helmet is safe as long as provider exists; it will not block render */}
-      <Helmet>
-        <meta name="robots" content="noindex, nofollow" />
-        <title>Moments | Neural Ads</title>
-      </Helmet>
 
       <div className="min-h-screen bg-background">
         {/* Header */}
