@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Home from "@/pages/Index";
-import Moments from "./pages/Moments";
+import Moments from "@/pages/Moments";
 
 // Policy pages
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
@@ -19,6 +20,9 @@ function App() {
 
         {/* Main site */}
         <Route path="/" element={<Home />} />
+
+        {/* Moments (hidden page) */}
+        <Route path="/moments" element={<Moments />} />
 
         {/* Onboarding */}
         <Route path="/onboarding" element={<Onboarding />} />
